@@ -2,18 +2,22 @@ package org.hicapacity.techhui;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.webkit.WebView;
 
 /**
  * @author Jason Axelson
  * 
  */
 public class SongsActivity extends Activity {
+  WebView mWebView;
+
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setContentView(R.layout.webview);
 
-    TextView textview = new TextView(this);
-    textview.setText("This is the songs tab");
-    setContentView(textview);
+    mWebView = (WebView) findViewById(R.id.webview);
+    System.out.println("webview is: " + mWebView);
+    mWebView.getSettings().setJavaScriptEnabled(true);
+    mWebView.loadUrl("http://www.techhui.com");
   }
 }
