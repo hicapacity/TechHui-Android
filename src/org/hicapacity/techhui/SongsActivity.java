@@ -13,7 +13,7 @@ public class SongsActivity extends Activity {
     super.onCreate(savedInstanceState);
 
     TextView textview = new TextView(this);
-    textview.setText("This is the community tab");
+    textview.setText("This is the songs tab");
     setContentView(textview);
   }
 }
