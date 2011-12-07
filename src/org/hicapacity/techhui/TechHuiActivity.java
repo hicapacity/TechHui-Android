@@ -22,20 +22,20 @@ public class TechHuiActivity extends TabActivity {
     intent = new Intent().setClass(this, ConferenceActivity.class);
 
     // Initialize a TabSpec for each tab and add it to the TabHost
-    spec = tabHost.newTabSpec("artists")
-        .setIndicator("Artists", res.getDrawable(R.drawable.calendar))
+    spec = tabHost.newTabSpec("conference")
+        .setIndicator("Conference", res.getDrawable(R.drawable.ic_tab_conference))
         .setContent(intent);
     tabHost.addTab(spec);
 
     // Do the same for the other tabs
     intent = new Intent().setClass(this, CommunityActivity.class);
     spec = tabHost.newTabSpec("albums")
-        .setIndicator("Albums", res.getDrawable(R.drawable.calendar)).setContent(intent);
+        .setIndicator("Albums", res.getDrawable(R.drawable.ic_tab_conference)).setContent(intent);
     tabHost.addTab(spec);
 
     intent = new Intent().setClass(this, SongsActivity.class);
-    spec = tabHost.newTabSpec("songs")
-        .setIndicator("Songs", res.getDrawable(R.drawable.ic_tab_conference)).setContent(intent);
+    spec = tabHost.newTabSpec("community")
+        .setIndicator("Community", res.getDrawable(R.drawable.ic_tab_community)).setContent(intent);
     tabHost.addTab(spec);
 
     tabHost.setCurrentTab(2);
