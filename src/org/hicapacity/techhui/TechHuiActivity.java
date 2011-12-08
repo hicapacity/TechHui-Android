@@ -38,6 +38,6 @@ public class TechHuiActivity extends TabActivity {
         .setIndicator("Community", res.getDrawable(R.drawable.ic_tab_community)).setContent(intent);
     tabHost.addTab(spec);
 
-    tabHost.setCurrentTab(2);
+    tabHost.setCurrentTab(0);
   }
 }

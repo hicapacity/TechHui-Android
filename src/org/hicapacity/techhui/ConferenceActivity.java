@@ -25,8 +25,11 @@ public class ConferenceActivity extends ListActivity {
       e.printStackTrace();
     }
 
-    ArrayAdapter<ScheduleElement> adapter = new ArrayAdapter<ScheduleElement>(this,
-        android.R.layout.simple_list_item_1, elements);
+    System.out.println("create adapter");
+    MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, elements);
+//    ArrayAdapter<ScheduleElement> adapter = new ArrayAdapter<ScheduleElement>(this,
+//        R.layout.schedule_item, elements);
+    System.out.println("adapter is " + adapter);
     this.setListAdapter(adapter);
   }
 

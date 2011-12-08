@@ -96,7 +96,7 @@ public class ScheduleElement {
   /**
    * @return the mTitle
    */
-  public String getmTitle() {
+  public String getTitle() {
     return mTitle;
   }
 
@@ -110,7 +110,7 @@ public class ScheduleElement {
   /**
    * @return the mTime
    */
-  public String getmTime() {
+  public String getTime() {
     return mTime;
   }
 
