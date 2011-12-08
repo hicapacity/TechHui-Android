@@ -6,7 +6,6 @@ import java.util.List;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -27,8 +26,6 @@ public class ConferenceActivity extends ListActivity {
 
     System.out.println("create adapter");
     MySimpleArrayAdapter adapter = new MySimpleArrayAdapter(this, elements);
-//    ArrayAdapter<ScheduleElement> adapter = new ArrayAdapter<ScheduleElement>(this,
-//        R.layout.schedule_item, elements);
     System.out.println("adapter is " + adapter);
     this.setListAdapter(adapter);
   }
