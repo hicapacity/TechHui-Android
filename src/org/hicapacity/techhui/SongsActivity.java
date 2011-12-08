@@ -18,6 +18,6 @@ public class SongsActivity extends Activity {
     mWebView = (WebView) findViewById(R.id.webview);
     System.out.println("webview is: " + mWebView);
     mWebView.getSettings().setJavaScriptEnabled(true);
-    mWebView.loadUrl("http://www.techhui.com");
+    mWebView.loadUrl("http://www.techhui.com/page/2011-techhui-conference-schedule");
   }
 }
