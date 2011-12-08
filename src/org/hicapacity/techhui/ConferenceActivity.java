@@ -21,15 +21,10 @@ public class ConferenceActivity extends ListActivity {
       elements = scheduleRetriever.getElements();
     }
     catch (IOException e) {
-      // TODO Auto-generated catch block
+      // TODO: Maybe show user error in this case.
       e.printStackTrace();
     }
 
-    // String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
-    // "Blackberry",
-    // "WebOS", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2" };
-    // ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-    // android.R.layout.simple_list_item_1, values);
     ArrayAdapter<ScheduleElement> adapter = new ArrayAdapter<ScheduleElement>(this,
         android.R.layout.simple_list_item_1, elements);
     this.setListAdapter(adapter);
@@ -38,6 +33,7 @@ public class ConferenceActivity extends ListActivity {
   @Override
   protected void onListItemClick(ListView l, View v, int position, long id) {
     ScheduleElement item = (ScheduleElement) getListAdapter().getItem(position);
-    Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
+    String description = item.getFullDescription() + "selected";
+    Toast.makeText(this, description, Toast.LENGTH_LONG).show();
   }
 }

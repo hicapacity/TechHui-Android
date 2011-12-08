@@ -10,7 +10,7 @@ import java.util.List;
 public interface ScheduleRetriever {
 
   /**
-   * @return
+   * @return elements in the schedule
    * @throws IOException
    */
   public List<ScheduleElement> getElements() throws IOException;

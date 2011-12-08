@@ -22,17 +22,18 @@ public class FileScheduleRetriever implements ScheduleRetriever {
   /** {@inheritDoc} */
   @Override
   public List<ScheduleElement> getElements() throws IOException {
-    BufferedReader br = null;
-    br = new BufferedReader(new InputStreamReader(mManager.open("data.txt")));
+    ArrayList<ScheduleElement> scheduleListToReturn = new ArrayList<ScheduleElement>();
+
+    BufferedReader br = new BufferedReader(new InputStreamReader(mManager.open("data.txt")));
     System.out.println(br.readLine());
-    ArrayList<ScheduleElement> scheduleList = new ArrayList<ScheduleElement>();
+
     String line;
     while ((line = br.readLine()) != null) {
       System.out.println(line);
       ScheduleElement scheduleElement = ScheduleElement.parseFromString(line);
-      scheduleList.add(scheduleElement);
+      scheduleListToReturn.add(scheduleElement);
     }
-    return scheduleList;
+    return scheduleListToReturn;
   }
 
 }

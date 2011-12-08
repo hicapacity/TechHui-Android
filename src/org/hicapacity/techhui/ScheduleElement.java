@@ -18,8 +18,13 @@ public class ScheduleElement {
   }
 
   public String getShortDescription() {
-    String string = mTime + mTitle;
+    String string = this.getFullDescription();
     return string.substring(0, 20);
+  }
+
+  public String getFullDescription() {
+    String string = mTime + mTitle;
+    return string;
   }
 
   /** {@inheritDoc} */
