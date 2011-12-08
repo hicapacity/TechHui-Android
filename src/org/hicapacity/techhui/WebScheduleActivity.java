@@ -8,7 +8,7 @@ import android.webkit.WebView;
  * @author Jason Axelson
  * 
  */
-public class SongsActivity extends Activity {
+public class WebScheduleActivity extends Activity {
   WebView mWebView;
 
   public void onCreate(Bundle savedInstanceState) {

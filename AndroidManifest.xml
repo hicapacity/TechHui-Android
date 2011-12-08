@@ -16,7 +16,7 @@
         </activity>
         <activity android:name=".ConferenceActivity"></activity>
         <activity android:name=".CommunityActivity"></activity>
-        <activity android:name=".SongsActivity"></activity>
+        <activity android:name=".WebScheduleActivity"></activity>
 
     </application>
 </manifest>
