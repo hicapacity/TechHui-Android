@@ -25,7 +25,6 @@ public class FileScheduleRetriever implements ScheduleRetriever {
     ArrayList<ScheduleElement> scheduleListToReturn = new ArrayList<ScheduleElement>();
 
     BufferedReader br = new BufferedReader(new InputStreamReader(mManager.open("data.txt")));
-    System.out.println(br.readLine());
 
     String line;
     while ((line = br.readLine()) != null) {
