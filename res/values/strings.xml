@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, TechHuiActivity!</string>
     <string name="app_name">TechHui</string>
+    <string name="no_notes">Nothing Here...</string>
 </resources>
