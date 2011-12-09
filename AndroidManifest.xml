@@ -15,6 +15,7 @@
 		<activity android:name=".ConferenceActivity"></activity>
 		<activity android:name=".CommunityActivity"></activity>
 		<activity android:name=".WebScheduleActivity"></activity>
+		<activity android:name=".ConferenceOverview"></activity>
 		<activity android:name=".NewSplashScreen">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
