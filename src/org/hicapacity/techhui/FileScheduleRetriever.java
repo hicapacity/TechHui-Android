@@ -20,7 +20,6 @@ public class FileScheduleRetriever implements ScheduleRetriever {
   }
 
   /** {@inheritDoc} */
-  @Override
   public List<ScheduleElement> getElements() throws IOException {
     ArrayList<ScheduleElement> scheduleListToReturn = new ArrayList<ScheduleElement>();
 
