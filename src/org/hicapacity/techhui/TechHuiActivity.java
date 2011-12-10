@@ -28,7 +28,7 @@ public class TechHuiActivity extends TabActivity {
     tabHost.addTab(spec);
 
     // Do the same for the other tabs
-    intent = new Intent().setClass(this, ConferenceOverview.class);
+    intent = new Intent().setClass(this, WebScheduleActivity.class);
     //intent = new Intent().setClass(this, WebScheduleActivity.class);
     spec = tabHost.newTabSpec("web_schedule")
         .setIndicator("Web Schedule", res.getDrawable(R.drawable.ic_tab_conference)).setContent(intent);
