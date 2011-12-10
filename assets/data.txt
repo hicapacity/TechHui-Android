@@ -1,8 +1,8 @@
-Time=9am-10:15am,One=Keynote: Geometric Theory of Everything 
-Time=10:30pm-11:45pm,One="Social Media - Dan Zelikman, John Garcia, Tara Coomans",
+Time=9am-10:15am,One="Keynote: Geometric Theory of Everything"
+Time=10:30pm-11:45pm,One="Social Media - Dan Zelikman, John Garcia, Tara Coomans"
 Time=10:30pm-11:45pm,Two="Gov. Tech: Mobile Apps, Web & Broadband - Gordon Bruce, Forest Frizzell, Yuka Nagashima"
-Time=noon-1:00pm,One="Lunch (outside)"
-Time=1:15pm-2:30pm,One="Mobile Development - Cory Shaw, Rama MacIntosh, Chad Podoski",
+Time=noon-1:00pm,One="Subway Lunch (outside) - Included in the cost of registration."
+Time=1:15pm-2:30pm,One="Mobile Development - Cory Shaw, Rama MacIntosh, Chad Podoski"
 Time=1:15pm-2:30pm,Two="Kukui Cup (Gamification of Energy Conservation) - Philip Johnson & Robert Brewer"
 Time=2:45-4:00pm,One="Ignite - See speaker list below"
 Time=4:15-5:30pm,One="3D CG & Animation - Todd Robertson & Ryan Brant"
