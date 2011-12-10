@@ -13,26 +13,38 @@ import android.content.res.AssetManager;
  * 
  */
 public class FileScheduleRetriever implements ScheduleRetriever {
-  AssetManager mManager;
+	AssetManager mManager;
+	private List<ScheduleElement> track1 = new ArrayList<ScheduleElement>();
+	private List<ScheduleElement> track2 = new ArrayList<ScheduleElement>();
+	
+	public FileScheduleRetriever(AssetManager manager) throws IOException {
+		// some manager?
+		mManager = manager;
+		
+		// read in file on class instantiation
+		BufferedReader br = new BufferedReader(new InputStreamReader(mManager.open("data.txt")));
+		
+		String line;
+		while ((line = br.readLine()) != null) {
+			System.out.println(line);
+			ScheduleElement scheduleElement = ScheduleElement.parseFromString(line);
+			
+			if (scheduleElement.getmTrack().equalsIgnoreCase("one")) {
+				this.track1.add(scheduleElement);
+			}
+			
+			if (scheduleElement.getmTrack().equalsIgnoreCase("two")) {
+				this.track2.add(scheduleElement);
+			}
+		}
+	}
 
-  public FileScheduleRetriever(AssetManager manager) {
-    mManager = manager;
-  }
+	public List<ScheduleElement> getTrack1Elements() throws IOException {
+		return this.track1;
+	}
 
-  /** {@inheritDoc} */
-  @Override
-  public List<ScheduleElement> getElements() throws IOException {
-    ArrayList<ScheduleElement> scheduleListToReturn = new ArrayList<ScheduleElement>();
-
-    BufferedReader br = new BufferedReader(new InputStreamReader(mManager.open("data.txt")));
-
-    String line;
-    while ((line = br.readLine()) != null) {
-      System.out.println(line);
-      ScheduleElement scheduleElement = ScheduleElement.parseFromString(line);
-      scheduleListToReturn.add(scheduleElement);
-    }
-    return scheduleListToReturn;
-  }
+	public List<ScheduleElement> getTrack2Elements() throws IOException {
+		return this.track2;
+	}
 
 }
