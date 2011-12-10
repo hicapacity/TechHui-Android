@@ -9,10 +9,6 @@
 		<LinearLayout android:id="@+id/linearLayout2"
 			android:layout_width="match_parent" android:layout_height="wrap_content">
 
-			<Button android:id="@+id/allButton" android:layout_width="0dp"
-				android:layout_height="wrap_content" android:layout_weight="1"
-				android:text="All" />
-
 			<Button android:id="@+id/t1Button" android:layout_width="0dp"
 				android:layout_height="wrap_content" android:layout_weight="1"
 				android:text="Track 1" />
